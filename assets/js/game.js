@@ -96,6 +96,21 @@ const computersTurn = async (minPoints) => {
         break;
       }
     } while (computerPoints < minPoints && minPoints <= 21);
+
+    setTimeout(() => {
+      if (computerPoints === minPoints) {
+        alert("No one wins :C");
+      } else if (
+        minPoints > 21 ||
+        (computerPoints > playerPoints && computerPoints <= 21)
+      ) {
+        alert("Computer Wins");
+      } else if (computerPoints >= 21) {
+        alert("Player Wins");
+      } else if (playerPoints === 21) {
+        alert("Player Wins");
+      }
+    }, 10);
   }
 };
 
@@ -166,17 +181,23 @@ btnGet.addEventListener("click", async () => {
     playerPointsText.innerHTML = playerPoints;
 
     if (playerPoints > 21) {
-      alert("Sorry, You Lose!");
+      setTimeout(() => {
+        alert("Sorry, You Lose!");
+      }, 10);
       await displayComputerTurn();
     } else if (playerPoints === 21) {
-      alert("21, Amazing!");
+      setTimeout(() => {
+        alert("21, Amazing!");
+      }, 10);
       await displayComputerTurn();
     }
   }
 });
 
 btnStop.addEventListener("click", async () => {
-  alert("Is computer's turn!");
+  setTimeout(() => {
+    alert("Is computer's turn!");
+  }, 10);
   await displayComputerTurn();
 });
 
