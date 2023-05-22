@@ -6,10 +6,14 @@ html,body{
 
 .title{
     text-align: center;
-    background-color: black;
-    color:white;
+    /* background-color: black; */
+    /* color:white; */
     padding: 20px;
     font-size: 25px;
+}
+
+.buttonPannel{
+    width: 100%;
 }
 
 #player-cards, #computer-cards{
@@ -24,4 +28,14 @@ html,body{
     margin-left: -75px;
 
     transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+}
+
+.signature{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom:0;
 }

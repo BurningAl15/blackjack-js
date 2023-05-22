@@ -13,15 +13,15 @@
 </head>
 
 <body>
-    <header class="title">
-        Blackjack
+    <header class="text-center text-lg-start bg-dark text-muted title">
+        <span class="text-light">Blackjack</span>
     </header>
 
-    <div class="row mt-2">
+    <div class="row mt-2 buttonPannel">
         <div id="divButtons" class="col text-center">
-            <button id="btnNew" class="btn btn-danger">Nuevo Juego</button>
-            <button id="btnGet" class="btn btn-primary">Pedir carta</button>
-            <button id="btnStop" class="btn btn-primary">Detener</button>
+            <button id="btnNew" class="btn btn-danger">New Game</button>
+            <button id="btnGet" class="btn btn-primary">Get Card</button>
+            <button id="btnStop" class="btn btn-primary">Stop</button>
         </div>
     </div>
 
@@ -41,6 +41,12 @@
             </div>
         </div>
     </div>
+
+    <footer class="text-center text-lg-start bg-dark text-muted signature">
+        <div class="me-5 d-lg-block">
+            <span class="text-light ">Made by Aldhair Vera</span>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/underscore@latest/underscore-umd-min.js"></script>
     <script src="assets/js/game.js"></script>
